@@ -1,6 +1,3 @@
-pipeline:
-    build:
-        image: python
-        commands:
-            - python main_tests.py
-        
+image: node
+script:
+    - python main_tests.py
