@@ -1,5 +1,0 @@
-pipeline:
-    runtests:
-        image: node
-        commands:
-            - python main_tests.py
