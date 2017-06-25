@@ -1,18 +1,11 @@
-#!/usr/bin/env groovy
 
 pipeline {
-    agent {
-        docker {
-            image 'python'
-            args '-u root'
-        }
-    }
+    agent any
 
     stages {
         stage('Build') {
             steps {
                 echo 'Building...'
-                sh 'python main_tests.py'
             }
         }
     }
