@@ -5,7 +5,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo "Building $ENV.BRANCH_NAME from $ENV.CHANGE_AUTHOR_DISPLAY_NAME..."
+                sh 'printenv'
                 sh 'python main_tests.py'
             }
         }
