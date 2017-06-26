@@ -10,7 +10,7 @@ class TestCar(unittest.TestCase):
 
     def test_with_wheels(self):
         truck = Car(wheels=6)
-        self.assertEqual(truck.wheels, 4)
+        self.assertEqual(truck.wheels, 6)
 
 if __name__ == '__main__':
     unittest.main()
