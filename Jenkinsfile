@@ -5,7 +5,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'printenv'
+                echo "Running ${env.BUILD_TAG}..."
                 sh 'python main_tests.py'
             }
         }
